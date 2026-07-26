@@ -230,7 +230,7 @@ begin
 	select
 		sales_id,
 		sales_person_id,
-		customer_id,
+		s.customer_id,
 		s.product_id,
 		quantity,
 		discount,
@@ -240,7 +240,7 @@ begin
 		transaction_number
 	from bronze.raw_sales as s
 	-- join with products table to fetch unit price
-	join bronze.raw_products as p
+	left join bronze.raw_products as p
 		on s.product_id=p.product_id;
 	v_end_time:=clock_timestamp();
 	raise notice 'Load Duration: % seconds',cast(extract(epoch from(v_end_time - v_start_time))as text);
