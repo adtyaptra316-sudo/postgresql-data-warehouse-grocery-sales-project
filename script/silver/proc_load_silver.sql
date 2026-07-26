@@ -99,6 +99,7 @@ begin
 		first_name,
 		middle_initial,	
 		last_name,
+		full_name,
 		city_id,
 		addres)
 	select
@@ -112,6 +113,18 @@ begin
 		end) as middle_initial,
 		-- trim whitespace for last_name
 		trim(last_name) as last_name,
+		-- create derived column from columns: first_name, middle_initial, and last_name
+		concat_ws(
+			' ',
+			nullif(trim(first_name),''),
+			case
+			 	when nullif(trim(middle_initial),'') is not null
+			 			and nullif(trim(middle_initial),'') !='NULL'
+			 		then concat(rtrim(trim(middle_initial),'.'),'.')
+			 	else null
+			 end,
+			 nullif(trim(last_name),'')
+			 ) as full_name,
 		city_id,
 		addres
 	from bronze.raw_customers;
@@ -184,6 +197,7 @@ begin
 		first_name,
 		middle_initial,
 		last_name,
+		full_name,
 		birth_date,
 		gender,
 		city_id,
@@ -194,6 +208,18 @@ begin
 		trim(first_name) as first_name,
 		trim(middle_initial) as middle_initial,
 		trim(last_name) as last_name,
+		-- create derived column from columns: first_name, middle_initial, and last_name
+		concat_ws(
+			' ',
+			nullif(trim(first_name),''),
+			case
+			 	when nullif(trim(middle_initial),'') is not null
+			 			and nullif(trim(middle_initial),'') !='NULL'
+			 		then concat(rtrim(trim(middle_initial),'.'),'.')
+			 	else null
+			 end,
+			 nullif(trim(last_name),'')
+			 ) as full_name,
 		birth_date,
 		-- standardize gender code ('M' -> 'Male', 'F'-> 'Female'
 		case
