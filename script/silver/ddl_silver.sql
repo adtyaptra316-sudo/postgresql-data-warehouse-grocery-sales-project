@@ -37,6 +37,7 @@ create table silver.clean_customers(
 	first_name varchar(50),
 	middle_initial varchar(1),		-- change data type from varchar(10) to varchar(1)
 	last_name varchar(50),
+	full_name varchar(104),			-- create derived column full name
 	city_id int,
 	addres varchar(255)
 );
@@ -65,6 +66,7 @@ create table silver.clean_employees(
 	first_name varchar(50),
 	middle_initial varchar(1),		-- change data type from varchar(10) to varchar(1)
 	last_name varchar(50),
+	full_name varchar(104),			-- create derived column full name
 	birth_date timestamp,
 	gender varchar(10),
 	city_id int,
