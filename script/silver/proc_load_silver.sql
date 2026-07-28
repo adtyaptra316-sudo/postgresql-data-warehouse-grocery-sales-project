@@ -258,10 +258,10 @@ begin
 		sales_person_id,
 		s.customer_id,
 		s.product_id,
-		quantity,
+		s.quantity,
 		discount,
 		-- calculate total_price using product price from table products
-		p.price - (p.price * s.discount) as total_price,
+		(s.quantity * p.price) * (1 - s.discount) as total_price,
 		sales_date,
 		transaction_number
 	from bronze.raw_sales as s
