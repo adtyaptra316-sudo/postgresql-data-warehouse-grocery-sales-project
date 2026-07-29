@@ -2,18 +2,18 @@
 This document outlines the naming conventions used for schemas, tables, views, columns, and other objects in the data warehouse.
 
 ## Table of contents
-* [1. General Principal](#1-general-principal)
-* [2. Table Naming Convention](#2-table-naming-convention)
-* [3. Column Naming Convention](#3-column-naming--convention)
-* [4. Stored Procedure](#4-stored-procedure)
+* [General Principal](#1-general-principal)
+* [Table Naming Convention](#2-table-naming-convention)
+* [Column Naming Convention](#3-column-naming--convention)
+* [Stored Procedure](#4-stored-procedure)
 
-  ### General Principal
+## General Principal
 
 - Naming convention: Use snack_case, with lowercase letters with underscore(_) to sparate word
 - Language: Use English for all names
 - Avoid Reserved Words: Do not use SQL reserved words as object names
 
-### **Table Naming Conventions**
+## **Table Naming Conventions**
 
 **Bronze Rules**
 
@@ -47,7 +47,7 @@ Glossary of Category Patterns
 | fact_ | fact table | fact_sales |
 | report_ | report table | report_sales_monthly |
 
-### **Column Naming Convention**
+## **Column Naming Convention**
 
 **Surrogate Key**
 
@@ -63,7 +63,7 @@ Glossary of Category Patterns
 - dwh_column_name
 - example: dwh_load_date →system generated column used to store the date when the record was loaded
 
-### Stored Procedure
+## Stored Procedure
 
 - All stored procedures used for loading data must follow the naming pattern:
 - load_<layer>
