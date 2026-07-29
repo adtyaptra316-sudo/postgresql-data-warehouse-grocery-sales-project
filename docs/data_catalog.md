@@ -55,6 +55,7 @@ The Gold Layer represents the business-level data, designed for analytics and re
 
 - Purpose: Contains detailed sales information.
 - columns:
+
 | Column Name | Data Type | Description |
 | --- | --- | --- |
 | sales_id | INT | Unique identifier for each sale. |
