@@ -39,13 +39,13 @@ Gold Rules
     - dim_customers → dimension table for customers
     - fact_sales→ fact table containing sales transactions
 
-Glossary of Category Patterns
-
-| Pattern | Meaning | Example |
-| --- | --- | --- |
-| dim_ | dimension table | dim_customers |
-| fact_ | fact table | fact_sales |
-| report_ | report table | report_sales_monthly |
+    Glossary of Category Patterns
+    
+    | Pattern | Meaning | Example |
+    | --- | --- | --- |
+    | dim_ | dimension table | dim_customers |
+    | fact_ | fact table | fact_sales |
+    | report_ | report table | report_sales_monthly |
 
 ## Column Naming Convention
 
