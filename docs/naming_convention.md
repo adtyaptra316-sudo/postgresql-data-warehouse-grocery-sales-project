@@ -2,10 +2,10 @@
 This document outlines the naming conventions used for schemas, tables, views, columns, and other objects in the data warehouse.
 
 ## Table of contents
-* [General Principal](#1-general-principal)
-* [Table Naming Convention](#2-table-naming-convention)
-* [Column Naming Convention](#3-column-naming--convention)
-* [Stored Procedure](#4-stored-procedure)
+* [General Principal](#general-principal)
+* [Table Naming Convention](#table-naming-convention)
+* [Column Naming Convention](#column-naming--convention)
+* [Stored Procedure](#stored-procedure)
 
 ## General Principal
 
@@ -13,7 +13,7 @@ This document outlines the naming conventions used for schemas, tables, views, c
 - Language: Use English for all names
 - Avoid Reserved Words: Do not use SQL reserved words as object names
 
-## **Table Naming Conventions**
+## Table Naming Conventions
 
 **Bronze Rules**
 
@@ -47,7 +47,7 @@ Glossary of Category Patterns
 | fact_ | fact table | fact_sales |
 | report_ | report table | report_sales_monthly |
 
-## **Column Naming Convention**
+## Column Naming Convention
 
 **Surrogate Key**
 
