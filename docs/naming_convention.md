@@ -40,7 +40,6 @@ Gold Rules
     - fact_sales→ fact table containing sales transactions
 
     Glossary of Category Patterns
-    
     | Pattern | Meaning | Example |
     | --- | --- | --- |
     | dim_ | dimension table | dim_customers |
