@@ -1,10 +1,11 @@
+<img width="1044" height="757" alt="data architecture" src="https://github.com/user-attachments/assets/b0ef1979-f406-4a67-95dd-374b3e8be9b4" />
 # Data Warehouse and Analytics Project
 Welcome to the Data Warehouse and Analytics Project repository! 🚀
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
 
 ## 🏗️ Data Architecture
 The data architecture for this project follows **Medallion Architecture** **Bronze**, **Silver**, and **Gold** Layer
-![data architecture](https://drive.google.com/file/d/1FV4N-QQyOA7kc3t3BuS813KpOsVnsU1f/view?usp=drive_link)
+<img width="1044" height="757" alt="data architecture" src="https://github.com/user-attachments/assets/4becc5e0-9af9-4fdb-a3de-8efbb8246f5f" />
 1. **Bronze** Layer: Stores raw data as-is from source systems. Stores raw data as-is from the source systems. Data is ingested from CSV Files into PostgreSQL Database.
 2. **Silver** Layer: This layer includes data cleansing, standardization, and normalization proccess to prepare data for analytics
 3. **Gold** Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
