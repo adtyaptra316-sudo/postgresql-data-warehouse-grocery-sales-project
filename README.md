@@ -10,10 +10,10 @@ The data architecture for this project follows **Medallion Architecture** **Bron
 3. **Gold** Layer: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
 ## 🔍 Project Overview
-- **Nama Proyek:** 4-Month Retail Sales Performance & Behavioral Engine (PostgreSQL)
+- **Project Name:** 4-Month Retail Sales Performance & Behavioral Engine (PostgreSQL)
 - **Dataset:** Grocery Sales Dataset (4-Month Snapshot Dataset from Kaggle)
-- **Data Architecture:** Design a moder datawarehouse using Medallion Architecture Bronze, Silver, and Gold Layer
-- **Project Purpose:** Building a centralized data platform (Single Source of Truth) using PostgreSQL to evaluate 4-month sales performance, salesperson effectiveness, customer purchasing behavior, and city-level geographic distribution.
+- **Data Architecture:** Design a modern Datawarehouse using Medallion Architecture Bronze, Silver, and Gold Layer
+- **Project Purpose:** Building a centralized data platform (Single Source of Truth) using PostgreSQL to evaluate 4-month sales performance, salesperson effectiveness, customer purchasing behavior, and products performance.
 
 ## 📝 Project Requirement
 ### Building the Data Warehouse (Data Engineering)
@@ -26,14 +26,4 @@ Data Quality: Cleanse and resolve data quality issues prior to analysis.
 Integration: Combine multiple tables into a single, user-friendly data model designed for analytical queries.
 Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
-### BI: Analytics & Reporting (Data Analysis)
-#### Objective
-Develop SQL-based analytics to deliver detailed insights into:
-
-- Monthly Sales Performance
-- Top Product Identification
-- Customer Purchase Behavior
-- Salesperson Effectiveness
-- Geographical Sales Insight (City-Level Only)
-
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+Next up, I did some EDA using the data produced by this pipeline/project. Link [Exploratory Data Analysis](https://github.com/adtyaptra316-sudo/postgresql-exploratory-data-analysis-grocery-sales-project)
